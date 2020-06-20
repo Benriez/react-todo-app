@@ -1,9 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 function App() {
+  const [todos, setTodos] = useState ([]);
+  
   return (
     <div className="App">
-     <p>Hello World</p>
+     <header className="App-header">
+        <p>React Todo</p>
+     </header>
     </div>
   );
 }
