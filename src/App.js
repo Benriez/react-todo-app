@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import TodoForm from "./components/TodoForm";
 import TodoList from "./components/TodoList";
 import './App.css';
+import Typography from "@material-ui/core/Typography"
 
 const LOCAL_STORAGE_KEY = "react-todo-list-todos";
 
@@ -43,15 +44,15 @@ function App() {
 
   return (
     <div className="App">
-     <header className="App-header">
-        <p>React Todo</p>
+        <Typography style={{padding: 16}} variant="h1">
+          React Todo
+        </Typography>
         <TodoForm addTodo={addTodo} />
         <TodoList 
           todos={todos} 
           toggleComplete={toggleComplete}
           removeTodo={removeTodo}  
-        />
-     </header>
+        /> 
     </div>
   );
 }
