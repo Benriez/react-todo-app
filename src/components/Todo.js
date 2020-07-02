@@ -1,6 +1,6 @@
 import {Checkbox, IconButton, ListItem} from "@material-ui/core";
 import Typography from "@material-ui/core/Typography";
-import CloseIcon from "@material-ui/icons/Close";
+//import CloseIcon from "@material-ui/icons";
 import React from "react"; 
 
 function Todo({todo, toggleComplete, removeTodo}) {
@@ -27,7 +27,7 @@ function Todo({todo, toggleComplete, removeTodo}) {
                 {todo.task}
             </Typography>
             <IconButton onClick={handleRemoveClick}>
-                <CloseIcon />
+                
             </IconButton>
         </ListItem>
     )
